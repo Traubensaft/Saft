@@ -53,7 +53,7 @@ int main()
 	*/
 	/* SSLv3_method() can be used on server and client */
 	SSL_CTX *SSL_ctx = SSL_CTX_new(SSLv3_method()); /*is needed to establish TLS/SSL enabled connections*/
-	if (LoadCertificates(SSL_ctx, "cert.saft", "key.traube") != 0)
+	if (LoadCertificates(SSL_ctx, "/Stuff/cert.saft", "/Stuff/key.traube") != 0)
 		goto end;
 	
 	SSL *SSL_ssl = SSL_new(SSL_CTX);
