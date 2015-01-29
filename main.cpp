@@ -1,4 +1,4 @@
-/*SSL implementation
+/*SSL server implementation
  *Traubensaft project*/
 
 #include <stdio.h>
